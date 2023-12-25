@@ -1,0 +1,139 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  bottom: 0;
+  height: 5.7rem;
+  /* background-color: #fff; */
+  background-color: rgba(255, 255, 255, 0.97);
+  /* box-shadow: 1px 1px 5px #aaa; */
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
+  opacity: 0; /* Start with zero opacity to hide it initially */
+  transition: all 0.33s;
+}
+
+.shownav {
+  transition: all 0.33s;
+  opacity: 1;
+}
+
+.trigger:hover + .navbar,
+.navbar:hover {
+  opacity: 1;
+  /* transform: translateY(0); */
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  width: 45%;
+  padding: 2rem;
+}
+
+.nav li a {
+  font-size: 1.6rem;
+  font-weight: 600;
+  /* color: #fff; */
+  transition: all 0.33s;
+  /* border-radius: 10px; */
+}
+
+.nav li a:hover {
+  /* box-shadow: 0.5px 0.5px 5px #aaa, -0.5px -0.5px 5px; */
+  /* transform: translateX(100%); */
+  color: #cf6202;
+}
+.nav li a.active {
+  /* padding: 0.5rem 2rem; */
+  color: #cf6202;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+/* Mobile Nav */
+
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav > .nav-moverlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 998;
+}
+
+.mobile-nav > .nav-open,
+.mobile-nav > .nav-close {
+  border: none;
+  background-color: #cf6202;
+  color: #fff;
+  font-weight: bold;
+  height: fit-content;
+  width: fit-content;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+  font-size: 4rem;
+  margin: 2rem;
+  transition: all 0.33s;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px #ccc;
+}
+
+.mobile-nav > .nav-open:hover,
+.mobile-nav > .nav-close:hover {
+  cursor: pointer;
+}
+
+.m-nav {
+  box-shadow: 1px 1px 5px #aaa;
+  background-color: rgba(255, 255, 255, 0.97);
+  width: 40rem;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 999;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: all 0.5s ease-in;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  transform: translateX(100%);
+}
+
+.open-mnav {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.m-nav li a {
+  font-size: 3rem;
+  font-weight: 600;
+  transition: all 0.33s;
+}
+
+.m-nav li a:hover {
+  color: #cf6202;
+}
+.m-nav li a.active {
+  color: #cf6202;
+  cursor: pointer;
+  background-color: #fff;
+}

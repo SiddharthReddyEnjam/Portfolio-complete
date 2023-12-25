@@ -1,0 +1,74 @@
+.skills-main {
+  margin-bottom: 3rem;
+}
+
+.skills-section {
+  margin: 0 15rem;
+}
+
+.skills-section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 3rem;
+  text-decoration: underline;
+}
+
+.skills {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 25%);
+  font-size: 2rem;
+  gap: 5rem;
+}
+
+.languages-component,
+.technologies-component,
+.web-component {
+  /* background-color: #000;
+  color: #fff; */
+  box-shadow: 0.1px 0.1px 3px #777;
+  padding: 3rem;
+  border-radius: 5px;
+}
+
+.skill-component {
+  transition: all 0.4s;
+}
+
+.skill-component:hover {
+  transform: translateY(-1rem);
+  box-shadow: 0.1px 0.1px 10px #aaa;
+}
+
+.skill-title {
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #cf6202;
+}
+
+.languages,
+.web {
+  display: grid;
+  gap: 2rem;
+}
+
+.languages > li,
+.web li {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  text-transform: capitalize;
+}
+
+.lang-name {
+  font-size: 1.7rem;
+}
+
+.technologies li {
+  margin-bottom: 2rem;
+}
+
+.ml-img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: contain;
+}

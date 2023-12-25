@@ -1,0 +1,83 @@
+.rounded-corners {
+  border-radius: 50%;
+}
+
+.hide {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+li {
+  list-style: none;
+}
+
+h3 {
+  text-transform: capitalize;
+}
+
+.clickable {
+  text-decoration: underline;
+  color: blue;
+  transition: all 0.5s;
+  margin-left: 0.5rem;
+}
+
+.clickable:hover {
+  /* border-radius: 10px; */
+  box-shadow: 2px 2px 10px #bbb;
+}
+
+.btn {
+  transition: all 0.33s;
+  border-radius: 5px;
+  padding: 1rem;
+  border: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  box-shadow: 1px 1px 5px #777;
+}
+
+.no-btn {
+  border: none;
+  background-color: inherit;
+}
+
+.hide-btn {
+  display: none;
+}
+
+.img-wrap {
+  width: 20rem;
+  height: 20rem;
+  overflow: hidden;
+}
+
+/* LOADING */
+.Loader {
+  border: 5px solid #eaf0f6;
+  border-radius: 50%;
+  border-top: 5px solid rgb(66, 66, 255);
+  width: 50px;
+  height: 50px;
+  animation: spinner 1.8s linear infinite;
+}
+
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.copy-link:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,121 @@
+/* HOME INTRO */
+.home-component {
+  height: 93.5vh;
+  position: relative;
+}
+
+.home-sub {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 5rem;
+  align-items: center;
+}
+
+.introduction {
+  background-color: #fff;
+  color: #000;
+  margin-bottom: 20rem;
+}
+
+.introduction h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+
+.introduction p {
+  font-size: 1.7rem;
+  display: inline-block;
+}
+
+.intro-img {
+  margin-bottom: 20rem;
+  min-width: 40rem;
+  height: 45rem;
+  background-image: url('../images/home-bg-3.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+}
+
+.down-icon {
+  position: absolute;
+  left: 49.3%;
+  bottom: 5%;
+  z-index: 997;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+
+.down-anim {
+  border: none;
+  font-size: 2rem;
+  background-color: inherit;
+  /* transform: translateY(70%); */
+}
+
+.down-anim:hover {
+  cursor: pointer;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(-160%);
+  }
+  40% {
+    -webkit-transform: translateY(-120%);
+  }
+  60% {
+    -webkit-transform: translateY(-120%);
+  }
+}
+@-moz-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -moz-transform: translateY(-150%);
+  }
+  40% {
+    -moz-transform: translateY(-120%);
+  }
+  60% {
+    -moz-transform: translateY(-120%);
+  }
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(-150%);
+    -moz-transform: translateY(-150%);
+    -ms-transform: translateY(-150%);
+    -o-transform: translateY(-150%);
+    transform: translateY(-150%);
+  }
+  40% {
+    -webkit-transform: translateY(-120%);
+    -moz-transform: translateY(-120%);
+    -ms-transform: translateY(-120%);
+    -o-transform: translateY(-120%);
+    transform: translateY(-120%);
+  }
+  60% {
+    -webkit-transform: translateY(-120%);
+    -moz-transform: translateY(-120%);
+    -ms-transform: translateY(-120%);
+    -o-transform: translateY(-120%);
+    transform: translateY(-120%);
+  }
+}
+
+/* HOME ABOUT SECTION */
+
+/* HOME PROJECT SECTION */

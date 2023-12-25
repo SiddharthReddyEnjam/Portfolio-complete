@@ -1,0 +1,20 @@
+.abouthome-main {
+  /* background-color: #000;
+  color: #fff; */
+
+  padding: 3rem 0;
+}
+
+.abouthome-component {
+  margin: 0 15rem;
+}
+
+.abouthome-component h2 {
+  text-decoration: underline;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.abouthome-desc p {
+  font-size: 1.7rem;
+}

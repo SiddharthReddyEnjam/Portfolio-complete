@@ -1,0 +1,59 @@
+.blog-loading {
+  margin: 5rem 0;
+  align-self: center;
+  min-height: 100vh;
+}
+
+.blog-main > h1 {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.blog-component {
+  min-height: 63vh;
+  margin: 2rem 0 0 0;
+  width: 100%;
+}
+
+.blog-post {
+  width: 60%;
+  margin: 0 auto 2rem auto;
+  padding: 2rem;
+  border-radius: 5px;
+  box-shadow: 0.1px 0.1px 5px #ccc;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.title-date,
+.blog-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.title-date p {
+  color: #aaa;
+}
+
+.blog-desc p {
+  font-size: 1.5rem;
+}
+
+.blog-desc .post-btn {
+  display: inline-block;
+  border: none;
+  font-size: 2rem;
+  transition: all 0.33s;
+}
+
+.blog-desc .post-btn:hover {
+  cursor: pointer;
+  color: blue;
+}
+
+.post-btn-fill {
+  color: blue;
+}

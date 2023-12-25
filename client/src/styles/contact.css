@@ -1,0 +1,99 @@
+.contact-section {
+  width: 45rem;
+  padding: 2rem;
+  margin: 10rem auto;
+  box-shadow: 0.1px 0.1px 2px #555;
+  border-radius: 5px;
+  position: relative;
+}
+
+.contact-section h1 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  padding: 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.name-lbl,
+.email-lbl,
+.msg-lbl {
+  font-size: 1.4rem;
+  margin-bottom: 3px;
+  font-weight: 600;
+}
+
+#full-name,
+#email {
+  padding: 7px;
+  border: none;
+  box-shadow: 0.1px 0.1px 3px #aaa;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  outline: 0;
+  height: 3.5rem;
+}
+
+#full-name {
+  text-transform: capitalize;
+}
+
+#message {
+  padding: 1rem;
+  border: none;
+  box-shadow: 0.1px 0.1px 2px #aaa;
+  margin-bottom: 2rem;
+  border-radius: 5px;
+  outline: 0;
+  resize: none;
+  height: 20rem;
+}
+
+.contact-btn {
+  background-color: #4c8bf5;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  font-size: 1.5rem;
+  color: #fff;
+  width: 10rem;
+  align-self: center;
+}
+
+.contact-section .ct-sent {
+  position: absolute;
+  bottom: 13%;
+  left: 13%;
+}
+
+.error-message {
+  position: absolute;
+  left: 27%;
+  top: 10%;
+  color: red;
+  font-weight: 600;
+}
+
+.ct-links {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  font-size: 3rem;
+}
+
+.ct-mailic,
+.ct-linkedinic,
+.ct-gitic {
+  opacity: 60%;
+  transition: all 0.33s;
+}
+
+.ct-mailic:hover,
+.ct-linkedinic:hover,
+.ct-gitic:hover {
+  opacity: 100%;
+}

@@ -1,0 +1,343 @@
+/* For width of 1510 that is 95em = 1520px */
+@media (max-width: 95em) {
+  .nav {
+    width: 50%;
+  }
+  .skills-main .skills {
+    grid-template-columns: repeat(3, 27%);
+  }
+}
+
+/* For width of 1416(88.5em) that is 89em = 1424px */
+@media (max-width: 89em) {
+  .nav {
+    width: 55%;
+  }
+  .skills-main .skills {
+    grid-template-columns: repeat(3, 30%);
+  }
+}
+
+/* For width of 1344 that is 84em */
+@media (max-width: 84em) {
+  .skills-main .skill-title {
+    font-size: 1.8rem;
+  }
+
+  .projecthome-main .projecthome-name {
+    font-size: 2.5rem;
+  }
+
+  .projects-main .project-name {
+    font-size: 2.5rem;
+  }
+}
+
+/* For width of 1240 that is 78em = 1248px*/
+@media (max-width: 78em) {
+  .abouthome-main .abouthome-component {
+    margin: 0 10rem;
+  }
+  .skills-main .skills-section {
+    margin: 0 10rem;
+  }
+
+  .projecthome-main .projecthome-component {
+    margin: 2rem 10rem;
+  }
+
+  .projects-main .projects-component {
+    margin: 2rem 10rem;
+  }
+}
+
+/* For width of 1140 that is 72em = 1152px*/
+@media (max-width: 72em) {
+  html {
+    font-size: 58%;
+  }
+}
+
+/* For width of 1060 that is 67em = 1072px*/
+@media (max-width: 67em) {
+  html {
+    font-size: 54%;
+  }
+}
+
+/* For width of 985 that is 62em = 992px*/
+@media (max-width: 62em) {
+  html {
+    font-size: 50%;
+  }
+
+  .navbar-main .navbar .nav {
+    width: 60%;
+  }
+
+  .about-main .about-component {
+    margin: 0 10rem;
+  }
+
+  .about-main .about-desc > p {
+    font-size: 1.7rem;
+  }
+
+  .blog-main .blog-post {
+    width: 80%;
+  }
+
+  .blog-main .blog-desc p {
+    font-size: 1.7rem;
+  }
+}
+
+/* For width of 901 that is 57em = 912px */
+@media (max-width: 57em) {
+  .abouthome-main .abouthome-desc p {
+    font-size: 1.7rem;
+  }
+
+  .skills .languages-component,
+  .skills .technologies-component,
+  .skills .web-component {
+    padding: 3rem 2rem;
+  }
+
+  .projecthome .projecthome-name {
+    font-size: 2rem;
+  }
+
+  .projecthome .projecthome-desc {
+    font-size: 1.7rem;
+  }
+
+  .projecthome-details .detailshome-btn {
+    font-size: 1.7rem;
+    font-weight: 550;
+  }
+  .project .project-name {
+    font-size: 2rem;
+  }
+  .project .project-desc {
+    font-size: 1.7rem;
+  }
+
+  .project-details .details-btn {
+    font-size: 1.7rem;
+    font-weight: 550;
+  }
+}
+
+/* For width of 850 that is 54em = 864px */
+@media (max-width: 54em) {
+  .home-sub .introduction h1 {
+    font-size: 3.5rem;
+  }
+
+  .home-sub .intro-img {
+    margin-top: 10rem;
+  }
+
+  .abouthome-main .abouthome-component {
+    margin: 0 5rem;
+  }
+  .skills-main .skills-section {
+    margin: 0 5rem;
+  }
+
+  .projecthome-main .projecthome-component {
+    margin: 2rem 5rem;
+  }
+
+  .projects-main .projects-component {
+    margin: 2rem 5rem;
+  }
+}
+
+/* For width of 766 that is 48em = 768px */
+@media (max-width: 48em) {
+  .skills-main .skills {
+    gap: 2rem;
+    grid-template-columns: repeat(3, 31.5%);
+  }
+}
+
+/* For width of 715 that is 45em = 720px */
+@media (max-width: 45em) {
+  .home-component .home-sub {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .home-component .introduction {
+    margin-bottom: 0;
+  }
+
+  .home-component .introduction h1 {
+    margin-top: 15rem;
+  }
+
+  .home-component .intro-img {
+    margin: 0;
+    height: 50%;
+    width: 70%;
+    margin-bottom: 8rem;
+  }
+}
+
+/* For width of 685 that is 43em = 688px */
+@media (max-width: 43em) {
+  .projecthome-component .projecthome {
+    height: 30rem;
+  }
+
+  .projecthome-overview .projecthome-desc {
+    gap: 0.7rem;
+  }
+
+  .projecthome-overview .projecthome-tools {
+    margin-bottom: 1rem;
+  }
+  .projects-component .project {
+    height: 30rem;
+  }
+
+  .project-overview .project-desc {
+    gap: 0.7rem;
+  }
+
+  .project-overview .project-tools {
+    margin-bottom: 1rem;
+  }
+}
+
+/* For width of 635 that is 40em = 640px */
+@media (max-width: 40em) {
+  .navbar-main .navbar {
+    display: none;
+  }
+
+  .navbar-main .mobile-nav {
+    display: block;
+  }
+
+  .projecthome-component .projecthome {
+    flex-direction: column;
+    height: 68rem;
+    width: 35rem;
+  }
+
+  .projecthome .projecthome-splitbtn {
+    flex-direction: column;
+  }
+
+  .projecthome-splitbtn .projecthome-img img {
+    width: 100%;
+    height: 30rem;
+  }
+
+  .projecthome .projecthome-details {
+    margin-bottom: 2rem;
+  }
+
+  /* For projects-main */
+
+  .projects-main .projects-component > h2 {
+    text-align: center;
+  }
+
+  .projects-component .project {
+    flex-direction: column;
+    height: 68rem;
+    width: 35rem;
+  }
+
+  .project .project-splitbtn {
+    flex-direction: column;
+  }
+
+  .project-splitbtn .project-img img {
+    width: 100%;
+    height: 30rem;
+  }
+
+  .project .project-details {
+    margin-bottom: 2rem;
+  }
+
+  /* About-page */
+  .about-main .about-component {
+    margin: 0 7rem;
+  }
+}
+
+/* For width of 592 that is 37em = 592px */
+@media (max-width: 37em) {
+  .skills-main .skills {
+    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* For width of 425 that is 27em = 432px */
+@media (max-width: 27em) {
+  .skills-main .skills {
+    gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* About-page */
+  .about-main .about-component {
+    margin: 0 5rem;
+  }
+}
+
+/* For width of 375 that is 24em = 384px */
+@media (max-width: 27em) {
+  .footer .footer-component {
+    gap: 8rem;
+  }
+}
+
+/* For width of 320 that is 20em = 320px */
+@media (max-width: 20em) {
+  .skills-main .skills {
+    gap: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .abouthome-main .abouthome-component {
+    margin: 0 2rem;
+  }
+
+  .skills-main .skills-section {
+    margin: 0 2rem;
+  }
+
+  .projecthome-component .projecthome {
+    width: 36.2rem;
+  }
+
+  .projecthome-main .projecthome-component {
+    margin: 2rem 2rem;
+  }
+
+  /* For projects-main */
+
+  .projects-component .project {
+    width: 36.2rem;
+  }
+
+  .projects-main .projects-component {
+    margin: 2rem 2rem;
+  }
+
+  .footer .footer-component {
+    gap: 4rem;
+  }
+
+  /* About-page */
+  .about-main .about-component {
+    margin: 0 3rem;
+  }
+}

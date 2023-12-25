@@ -1,0 +1,32 @@
+.project-dtl-main {
+  min-height: 68vh;
+  position: relative;
+}
+
+.pdtl-component {
+  width: 80%;
+  margin: 5rem auto;
+}
+
+.pdtl {
+  margin-bottom: 1rem;
+}
+
+.pdtl h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.pdtl .pdesc {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.pdtl .pdetail {
+  font-size: 1.5rem;
+}
+
+.pdtl-btn {
+  position: absolute;
+  bottom: 0;
+}

@@ -1,0 +1,72 @@
+.footer {
+  margin-top: 5rem;
+}
+
+.footer-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 0 -0.5px 1px #aaa;
+}
+
+.footer-component {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  display: flex;
+  gap: 15rem;
+}
+
+.footer-name a {
+  text-decoration: underline;
+}
+
+.resume-copy {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.social {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.cr {
+  width: fit-content;
+  margin: 2rem auto;
+  font-size: 1.2rem;
+}
+
+/* TOOL TIP */
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+  height: 24px; /* Fixed height for the container to reserve space for the tooltip */
+  display: flex;
+  align-items: center;
+}
+
+.tooltip-container.hovered .tooltip-text {
+  display: block;
+}
+
+.tooltip-text {
+  display: block;
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
