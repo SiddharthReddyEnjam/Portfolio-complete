@@ -5,7 +5,7 @@ import Loading from '../animations/Loading';
 import {
   BsFillArrowLeftCircleFill,
   BsFillArrowRightCircleFill,
-} from 'react-icons/Bs';
+} from 'react-icons/bs';
 
 import '../styles/projectshome.css';
 
