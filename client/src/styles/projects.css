@@ -1,5 +1,19 @@
+.failed-fetch-main {
+  height: 68vh;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+  display: flex;
+  flex-direction: column;
+}
+
+.failed-fetch {
+  align-self: center;
+  font-size: 2rem;
+  color: #aaa;
+}
+
 .projects-loading {
-  margin: 10rem auto;
+  margin: 10rem auto 0 auto;
 }
 
 .projects-component {
