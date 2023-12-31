@@ -62,7 +62,10 @@ const ProjectsHome = () => {
         <div className='projecthome'>
           <div className='projecthome-splitbtn'>
             <div className='projecthome-img'>
-              <img src={currentProject.imgs} alt='project image' />
+              <img
+                src={`/images/projects/${currentProject.imgs}`}
+                alt='project image'
+              />
             </div>
             <div className='projecthome-overview'>
               <div className='projecthome-info'>
