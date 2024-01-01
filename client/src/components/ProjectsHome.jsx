@@ -1,3 +1,9 @@
+// Import images at the top of your file
+import handImage from '/images/projects/MoCap/hand.png';
+import homsLogo from '/images/projects/HOMS/homs-logo.jpg';
+import bloodGram from '/images/projects/BLOOD/BloodGram.png';
+import omniLogo from '/images/projects/OMNI/omni-logo.png';
+
 import { useEffect, useState } from 'react';
 import projects from '../data/projects';
 import { useNavigate } from 'react-router-dom';
@@ -62,10 +68,8 @@ const ProjectsHome = () => {
         <div className='projecthome'>
           <div className='projecthome-splitbtn'>
             <div className='projecthome-img'>
-              <img
-                src={`/images/projects/${currentProject.imgs}.png`}
-                alt='project image'
-              />
+              <img src={`/images${currentProject.imgs}`} alt='project image' />
+              {/* <img src={currentProject.imgs} alt='project image' /> */}
             </div>
             <div className='projecthome-overview'>
               <div className='projecthome-info'>
