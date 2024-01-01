@@ -69,7 +69,7 @@ const Footer = () => {
           </div>
         </div>
         <div className='cr'>
-          <p>Copyright © 2023 by Siddharth Reddy Enjam</p>
+          <p>Copyright © 2024 by Siddharth Reddy Enjam</p>
         </div>
       </div>
     </div>
