@@ -4,6 +4,13 @@
   min-height: 100vh;
 }
 
+.blog-maintenance {
+  color: #aaa;
+  font-size: 2rem;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: italic;
+}
+
 .blog-main > h1 {
   margin-top: 2rem;
   text-align: center;

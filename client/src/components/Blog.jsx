@@ -9,19 +9,33 @@ import '../styles/blog.css';
 const Blog = () => {
   const [loading, setLoading] = useState(true);
   const [posts, setPosts] = useState([]);
+  const [maintenance, setMaintenance] = useState(false);
 
   useEffect(() => {
     const fetchAllPosts = async () => {
       try {
         const res = await axios.get('http://localhost:5002/blog');
         setLoading(false);
+        setMaintenance(false);
         setPosts(res.data);
       } catch (err) {
         setLoading(true);
+        setMaintenance(true);
       }
     };
     fetchAllPosts();
   }, []);
+
+  if (maintenance) {
+    return (
+      <div className='blog-loading'>
+        <p className='blog-maintenance'>
+          The website blog is currently under maintenance please check after
+          sometime
+        </p>
+      </div>
+    );
+  }
 
   if (loading) {
     return (
