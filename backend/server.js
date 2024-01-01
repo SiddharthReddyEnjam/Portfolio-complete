@@ -10,14 +10,14 @@ connectDB();
 // Init Middleware
 app.use(express.json({ extended: false }));
 
-const corsOptions = {
-  origin: 'https://siddharthreddyenjam.com',
-  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-  credentials: true,
-  optionsSuccessStatus: 204,
-};
+// const corsOptions = {
+//   origin: 'https://siddharthreddyenjam.com',
+//   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+//   credentials: true,
+//   optionsSuccessStatus: 204,
+// };
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 // app.use(cors());
 
@@ -27,6 +27,6 @@ app.use('/contact', require('./routes/contact'));
 
 const PORT = process.env.PORT || 5002;
 
-app.listen(PORT, '0.0.0.0', () => {
+app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
 });
