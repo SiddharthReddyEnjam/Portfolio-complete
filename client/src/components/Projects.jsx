@@ -11,53 +11,53 @@ const Projects = () => {
   const navigate = useNavigate();
   const [checkApi, setCheckApi] = useState(false);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(
-          'https://pzopztdg6g.execute-api.us-east-1.amazonaws.com/default/projectsdata'
-        );
-
-        if (!response.ok) {
-          setCheckApi(true);
-          throw new Error('Failed to fetch data');
-        }
-
-        setLoading(false);
-        setCheckApi(false);
-        const data = await response.json();
-        setMyprojects(data);
-      } catch (error) {
-        console.error('Error fetching data:', error);
-      }
-    };
-    fetchData();
-  }, []);
-
-  if (setCheckApi === true)
-    return (
-      <div className='failed-fetch-main'>
-        <div className='projects-loading'>
-          <Loading />
-        </div>
-        <p className='failed-fetch'>
-          Failed to fetch data from api try again after sometime
-        </p>
-      </div>
-    );
-
   // useEffect(() => {
-  //   const fetchAllProjects = async () => {
+  //   const fetchData = async () => {
   //     try {
-  //       const res = await projects;
+  //       const response = await fetch(
+  //         'https://pzopztdg6g.execute-api.us-east-1.amazonaws.com/default/projectsdata'
+  //       );
+
+  //       if (!response.ok) {
+  //         setCheckApi(true);
+  //         throw new Error('Failed to fetch data');
+  //       }
+
   //       setLoading(false);
-  //       setMyprojects(res);
-  //     } catch (err) {
-  //       setLoading(true);
+  //       setCheckApi(false);
+  //       const data = await response.json();
+  //       setMyprojects(data);
+  //     } catch (error) {
+  //       console.error('Error fetching data:', error);
   //     }
   //   };
-  //   fetchAllProjects();
+  //   fetchData();
   // }, []);
+
+  // if (setCheckApi === true)
+  //   return (
+  //     <div className='failed-fetch-main'>
+  //       <div className='projects-loading'>
+  //         <Loading />
+  //       </div>
+  //       <p className='failed-fetch'>
+  //         Failed to fetch data from api try again after sometime
+  //       </p>
+  //     </div>
+  //   );
+
+  useEffect(() => {
+    const fetchAllProjects = async () => {
+      try {
+        const res = await projects;
+        setLoading(false);
+        setMyprojects(res);
+      } catch (err) {
+        setLoading(true);
+      }
+    };
+    fetchAllProjects();
+  }, []);
 
   if (loading) {
     return (
@@ -94,7 +94,7 @@ const Projects = () => {
       <div className='project' key={project.id}>
         <div className='project-splitbtn'>
           <div className='project-img'>
-            <img src={project.img} alt='project image' />
+            <img src={project.imgs} alt='project image' />
           </div>
           <div className='project-overview'>
             <div className='project-info'>
