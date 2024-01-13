@@ -11,7 +11,7 @@ const HomeIntro = () => {
         <div className='home-sub'>
           <div className='introduction'>
             <h1>Hi, My name is Siddharth</h1>
-            <p>I am a Machine Learning Engineer and Full Stack Developer</p>
+            {/* <p>I am a Machine Learning Engineer and Full Stack Developer</p> */}
           </div>
           <div className='intro-img'></div>
         </div>
