@@ -3,6 +3,7 @@ import ProjectsHome from './ProjectsHome';
 import AboutHome from './AboutHome';
 
 import '../styles/home-animated.css';
+import Social from './Social';
 
 const HomeIntro = () => {
   return (
@@ -24,6 +25,7 @@ const HomeIntro = () => {
       <AboutHome />
       <Skills />
       <ProjectsHome />
+      <Social />
     </div>
   );
 };

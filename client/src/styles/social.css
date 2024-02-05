@@ -1,0 +1,18 @@
+.social-main {
+}
+
+.social-component {
+  margin: 5rem 15rem 0 15rem;
+  display: flex;
+  justify-content: center;
+}
+
+.social-component h1 {
+  text-decoration: underline;
+  font-size: 3rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.linkedin-main {
+  margin: auto;
+}
