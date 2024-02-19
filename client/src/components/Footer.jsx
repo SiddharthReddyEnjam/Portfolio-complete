@@ -3,7 +3,7 @@ import { AiOutlineCopy, AiFillCopy } from 'react-icons/ai';
 import { useState } from 'react';
 
 const resume_link =
-  'https://drive.google.com/file/d/1EMWubcFFJ6sWcMYcIpo3FjLxOlZMOSWu/view?usp=sharing';
+  'https://drive.google.com/file/d/190gOypXWl3E1NpZ_twvlVUdg2t9rYT79/view?usp=drive_link';
 
 const Footer = () => {
   const [fill, setFill] = useState(false);

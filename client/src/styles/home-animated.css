@@ -15,7 +15,11 @@
 .introduction {
   background-color: #fff;
   color: #000;
+  margin-top: 15rem;
   margin-bottom: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15rem;
 }
 
 .introduction h1 {
@@ -26,6 +30,36 @@
 .introduction p {
   font-size: 1.7rem;
   display: inline-block;
+}
+
+/* Adding the links for social */
+
+/* LOGOS and their links */
+.hm-links {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 5rem;
+  gap: 5rem;
+}
+
+.hm-linkedinic {
+}
+
+.hm-gitic {
+}
+
+.hm-mailic {
+  font-size: 4rem;
+}
+
+.hm-log {
+  height: 4rem;
+  opacity: 100%;
+}
+
+.hm-log:hover {
+  opacity: 90%;
 }
 
 .intro-img {
