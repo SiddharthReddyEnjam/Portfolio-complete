@@ -109,15 +109,15 @@ const ProjectsHome = () => {
           </div>
         </div>
         <div className='reviewhome'>
-          <div className='no-btn'>
+          <button className='no-btn'>
             <BsFillArrowLeftCircleFill
               className={`
             ${currentProjectIndex === 0 ? 'disable' : 'pn-btn'}`}
               onClick={handleProjectP}
               disabled={currentProjectIndex === 0}
             />
-          </div>
-          <div className='no-btn'>
+          </button>
+          <button className='no-btn'>
             <BsFillArrowRightCircleFill
               className={`
             ${
@@ -128,7 +128,7 @@ const ProjectsHome = () => {
               onClick={handleProjectN}
               disabled={currentProjectIndex === myprojects.length - 1}
             />
-          </div>
+          </button>
         </div>
       </div>
     </div>
