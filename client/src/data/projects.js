@@ -8,7 +8,7 @@ import omniLogo from '../images/projects/OMNI/omni-logo.png';
 const projects = [
   {
     id: 1,
-    img: rideEasyLogo,
+    imgs: rideEasyLogo,
     name: 'RideEasy (Taxi Management System)',
     description:
       'RideEasy is a taxi management system designed for seamless booking, fare calculation, and tracking for both drivers and passengers. It incorporates features like real-time GPS tracking, secure payments, and user-friendly mobile apps for both drivers and riders.',
@@ -22,7 +22,7 @@ const projects = [
   },
   {
     id: 2,
-    img: handImage,
+    imgs: handImage,
     name: 'Motion Capture Hand Postures',
     description:
       'Capturing of motion in hand postures with a camera and training a machine learning models based of the inputs of 14 users. Here worked with many machine learning models and finally the best outcome is given by deep learning models with a good accuracy.',
@@ -41,7 +41,7 @@ const projects = [
   },
   {
     id: 3,
-    img: countriesLogo,
+    imgs: countriesLogo,
     name: 'Countries of the World',
     description:
       'Using Tableau to analyze and visualize key global indicators, including economic growth, health, migration, climate impact on agriculture, and the role of technology in education and economy.',
@@ -55,7 +55,7 @@ const projects = [
   },
   {
     id: 4,
-    img: homsLogo,
+    imgs: homsLogo,
     name: 'Hostel Outing Management System',
     description:
       'Developed three applications for student, warden and watchman and a form for a parent. Applications are developed with high security and easy access to the user with friendly user interface. Automated unique QR for every transaction.',
@@ -72,7 +72,7 @@ const projects = [
   },
   {
     id: 5,
-    img: bloodGram,
+    imgs: bloodGram,
     name: 'BloodGram',
     description:
       'Bloodgram is a platform which is doing extremely noble deed in getting blood to the needy.',
@@ -86,7 +86,7 @@ const projects = [
   },
   {
     id: 6,
-    img: omniLogo,
+    imgs: omniLogo,
     name: 'Omnifood',
     description:
       'Omnifood is about the food ordering it has some meal plans with healthy food and nutritionous. The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs.',
