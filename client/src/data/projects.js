@@ -9,7 +9,7 @@ const projects = [
   {
     id: 1,
     imgs: rideEasyLogo,
-    name: 'RideEasy (Taxi Management System)',
+    name: 'RideEasyy (Taxi Management System)',
     description:
       'RideEasy is a taxi management system designed for seamless booking, fare calculation, and tracking for both drivers and passengers. It incorporates features like real-time GPS tracking, secure payments, and user-friendly mobile apps for both drivers and riders.',
     langs: [
