@@ -1,4 +1,8 @@
 import '../styles/about.css';
+import ResumePreview from './ResumePreview';
+
+const resume_link =
+  'https://drive.google.com/file/d/1Vb2qvBBXPRLI0X4kqZz-Pf06R2qzTEHM/view?usp=sharing';
 
 function About() {
   return (
@@ -30,6 +34,7 @@ function About() {
             {`So that's me in a nutshell – a tech enthusiast with a knack for problem-solving, a love for creating unique experiences, and a passion for sharing knowledge with others. Let's dive into the tech world and make some awesome things happen together!`}
           </p>
         </div>
+        <ResumePreview pdfUrl={resume_link} />
       </div>
     </div>
   );

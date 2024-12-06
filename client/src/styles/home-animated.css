@@ -7,8 +7,8 @@
 .home-sub {
   height: 100%;
   display: flex;
-  justify-content: space-evenly;
-  margin: 0 5rem;
+  justify-content: space-between;
+  margin: 0 18rem;
   align-items: center;
 }
 
@@ -17,14 +17,13 @@
   color: #000;
   margin-top: 15rem;
   margin-bottom: 20rem;
-  display: flex;
-  flex-direction: column;
-  gap: 15rem;
+  margin-right: 0.5rem;
 }
 
 .introduction h1 {
   font-size: 4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
+  text-align: center;
 }
 
 .introduction p {
@@ -32,34 +31,50 @@
   display: inline-block;
 }
 
-/* Adding the links for social */
-
-/* LOGOS and their links */
-.hm-links {
+/* PROFILE LINKS */
+.profile-links {
+  margin: auto;
+  margin-top: 3rem;
   display: flex;
-  /* align-items: center; */
   justify-content: center;
-  height: 5rem;
-  gap: 5rem;
+  gap: 1.7rem;
+  font-size: 2rem;
+  align-items: center;
+  width: 100%;
 }
 
-.hm-linkedinic {
-}
-
-.hm-gitic {
-}
-
-.hm-mailic {
-  font-size: 4rem;
-}
-
-.hm-log {
-  height: 4rem;
+.pr-mailic,
+.pr-linkedinic,
+.pr-gitic {
   opacity: 100%;
+  transition: all 0.33s;
+  display: flex;
+  align-items: center;
+  box-shadow: 0.1px 0.1px 3px rgb(65, 176, 255);
+  height: 3.2rem;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  transition: all 0.33s ease-out;
 }
 
-.hm-log:hover {
-  opacity: 90%;
+.pro-logo-linkedin {
+  width: 10rem;
+  object-fit: contain;
+}
+
+.pro-logo {
+  width: 2.5rem;
+  object-fit: contain;
+}
+
+.pr-namelogo {
+  width: 7rem;
+}
+
+.pr-mailic:hover,
+.pr-linkedinic:hover,
+.pr-gitic:hover {
+  box-shadow: 0.5px 0.5px 10px rgb(65, 176, 255);
 }
 
 .intro-img {
@@ -153,3 +168,33 @@
 /* HOME ABOUT SECTION */
 
 /* HOME PROJECT SECTION */
+
+/* Adding the links for social */
+
+/* LOGOS and their links */
+.hm-links {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 5rem;
+  gap: 5rem;
+}
+
+.hm-linkedinic {
+}
+
+.hm-gitic {
+}
+
+.hm-mailic {
+  font-size: 4rem;
+}
+
+.hm-log {
+  height: 4rem;
+  opacity: 100%;
+}
+
+.hm-log:hover {
+  opacity: 90%;
+}

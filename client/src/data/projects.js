@@ -4,6 +4,7 @@ import countriesLogo from '../images/projects/COUNTRIESOW/countries_main.png';
 import homsLogo from '../images/projects/HOMS/homs-logo.jpg';
 import bloodGram from '../images/projects/BLOOD/BloodGram.png';
 import omniLogo from '../images/projects/OMNI/omni-logo.png';
+import carLogo from '../images/projects/RideEasy/Car.png';
 
 const projects = [
   {
@@ -19,6 +20,7 @@ const projects = [
     ],
     tools: [{ tool: 'ReactJs', color: 'indigo' }],
     details: 'Based on taxi booking and management.',
+    site: 'https://rideeasy.netlify.app/',
   },
   {
     id: 2,
@@ -98,6 +100,19 @@ const projects = [
     tools: [],
     details:
       'Based on food ordering. To get a healthy meal delivered to the door, every single day',
+  },
+  {
+    id: 7,
+    imgs: carLogo,
+    name: 'Cars(in progress)',
+    description: 'will be added',
+    langs: [
+      { lang: 'JavaScript', color: 'green' },
+      { lang: 'HTML', color: '#777' },
+      { lang: 'CSS', color: '#555' },
+    ],
+    tools: [{ tool: 'ReactJs', color: 'indigo' }],
+    details: 'Based on cars.',
   },
 ];
 

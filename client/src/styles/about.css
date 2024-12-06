@@ -19,3 +19,36 @@
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
+
+/* Adding preview */
+
+.about-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.about-component {
+  max-width: 800px;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-desc p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+iframe {
+  border: none;
+  width: 100%;
+  height: 100%;
+}
