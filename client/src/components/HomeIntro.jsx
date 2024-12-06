@@ -6,7 +6,7 @@ import '../styles/home-animated.css';
 import Social from './Social';
 import linkedin from '../images/logos/Linked.svg';
 import Githubmark from '../images/logos/github-mark.svg';
-import Githublogo from '../images/logos/Github_Logo.png';
+import Githublogo from '../images/logos/github_logo.png';
 
 const HomeIntro = () => {
   const resume_link =
