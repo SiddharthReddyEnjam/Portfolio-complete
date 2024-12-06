@@ -6,7 +6,7 @@ import '../styles/home-animated.css';
 import Social from './Social';
 import linkedin from '../images/logos/Linked.svg';
 import Githubmark from '../images/logos/github-mark.svg';
-import Githublogo from '../images/logos/github_logo.png';
+import Gitlogo from '../images/logos/git_logo.png';
 
 const HomeIntro = () => {
   const resume_link =
@@ -50,7 +50,7 @@ const HomeIntro = () => {
                 rel='noopener noreferrer'
                 className='pr-gitic'
               >
-                <img src={Githublogo} className='pro-logo pr-namelogo' />
+                <img src={Gitlogo} className='pro-logo pr-namelogo' />
                 <img src={Githubmark} className='pro-logo' />
               </a>
 
