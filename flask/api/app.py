@@ -3,7 +3,7 @@ import random
 from flask_cors import CORS  # Import CORS
 
 
-application = Flask(__name__)
+app = Flask(__name__)
 CORS(app)
 
 # Predefined responses based on your resume
@@ -64,7 +64,7 @@ def get_response(user_input):
     return random.choice(general_responses["default"])
 
 # Flask route to handle chatbot requests
-@application.route('/chat', methods=['POST'])
+@app.route('/chat', methods=['POST'])
 def chat():
     data = request.get_json()
     user_input = data.get('message', '')
@@ -72,4 +72,4 @@ def chat():
     return jsonify({'response': response})
 
 if __name__ == '__main__':
-    application.run(debug=True)
+    app.run(debug=True)
