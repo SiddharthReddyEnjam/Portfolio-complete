@@ -55,14 +55,14 @@ const Chatbot = () => {
     if (chatHistoryEndRef.current) {
       chatHistoryEndRef.current.scrollIntoView({ behavior: 'smooth' });
     }
-  }, [chatHistory]); // Run the effect whenever chatHistory changes
+  }, [chatHistory]);
 
   return (
     <div className={`chat-container ${isMinimized ? 'minimized' : ''}`}>
       {isMinimized && (
-        <div className='chat-bubble' onClick={toggleMinimize}>
-          <span>Chat Now</span>
-        </div>
+        <button onClick={toggleMinimize} className='maximize-btn'>
+          <ion-icon name='chatbubble-outline'></ion-icon>
+        </button>
       )}
 
       <div className={`chat-box`}>

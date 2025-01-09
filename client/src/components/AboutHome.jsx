@@ -7,11 +7,7 @@ function AboutHome() {
         <h2>About</h2>
         <div className='abouthome-desc'>
           <p>
-            {`I'm Siddharth Reddy Enjam, a passionate graduate student currently
-            pursuing a Master of Science in Engineering Data Science at the
-            University of Houston. My journey in the world of technology and
-            data-driven solutions has been a fulfilling adventure, marked by a
-            commitment to innovation and excellence.`}
+            {`I am Siddharth Reddy Enjam, a recent graduate with a Master of Science in Engineering Data Science from the University of Houston. Throughout my academic journey, I have developed a deep passion for technology, Full-Stack development, and data-driven solutions, striving to innovate and deliver excellence in every project I undertake. My experiences have shaped me into a versatile problem-solver, eager to contribute to the ever-evolving field of data science and software development.`}
           </p>
         </div>
       </div>

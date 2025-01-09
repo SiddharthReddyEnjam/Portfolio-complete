@@ -1,33 +1,14 @@
 .about-main {
-  /* background-color: #000;
-  color: #fff; */
-
-  padding: 3rem 0;
-}
-
-.about-component {
-  margin: 0 15rem;
-}
-
-.about-component h2 {
-  text-decoration: underline;
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-}
-
-.about-desc p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
-
-/* Adding preview */
-
-.about-main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 8rem 20px;
   background-color: #f9f9f9;
+}
+
+.about-main-dark {
+  background-color: #222;
+  color: #eee;
 }
 
 .about-component {
@@ -40,11 +21,21 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.about-component-dark {
+  background-color: #111;
+}
+
+.about-component h2 {
+  text-decoration: underline;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
 .about-desc p {
   margin-bottom: 1.5rem;
   line-height: 1.6;
   font-size: 1.5rem;
-  color: #333;
+  /* color: #333; */
 }
 
 iframe {

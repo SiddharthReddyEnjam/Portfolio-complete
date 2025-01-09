@@ -7,10 +7,9 @@ import Social from './Social';
 import linkedin from '../images/logos/Linked.svg';
 import Githubmark from '../images/logos/github-mark.svg';
 import Gitlogo from '../images/logos/git_logo.png';
+import { resume_link } from '../actions/resume_link';
 
 const HomeIntro = () => {
-  const resume_link =
-    'https://drive.google.com/file/d/1Vb2qvBBXPRLI0X4kqZz-Pf06R2qzTEHM/view?usp=sharing';
   const nameText = 'Siddharth';
   const speed = 200;
   const [index, setIndex] = useState(0);
@@ -29,7 +28,7 @@ const HomeIntro = () => {
   }, [index, nameText, speed]);
 
   return (
-    <div id='home-main'>
+    <div className='home-main'>
       <div className='home-component'>
         <div className='home-sub'>
           <div className='introduction'>

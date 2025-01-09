@@ -12,11 +12,17 @@
     "host": "vite --host"
   },
   "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/joy": "^5.0.0-beta.51",
+    "@mui/material": "^6.3.1",
+    "@mui/system": "^6.3.1",
     "@react-pdf-viewer/core": "^3.12.0",
     "@react-pdf/renderer": "^4.1.5",
     "axios": "^1.5.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
+    "mui": "^0.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.12.0",

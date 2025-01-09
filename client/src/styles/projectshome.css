@@ -111,12 +111,18 @@
   transition: all 0.5s;
 }
 
+.pn-btn,
+.disable {
+  background-color: #fff;
+  color: #000;
+}
+
 .pn-btn {
   height: 4rem;
   width: 4rem;
   border-radius: 50px;
-  transition: all 0.5s;
-  box-shadow: 0.5px 0.5px 10px #aaa;
+  transition: all 0.33s;
+  box-shadow: 0.1px 0.1px 10px #aaa;
 }
 
 .pn-btn:hover {
