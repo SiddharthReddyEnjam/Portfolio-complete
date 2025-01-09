@@ -6,10 +6,12 @@ import ScrollToTop from './components/ScrollToTop';
 import './styles/query.css';
 import Chatbot from './components/Chatbot';
 import { useState, useEffect } from 'react';
+// import useScrollRestoration from './animations/useScrollRestoration';
 
 const App = () => {
   const systemTheme = useSystemTheme();
   const [darkTheme, setDarkTheme] = useState(systemTheme);
+  // useScrollRestoration();
 
   const toggleTheme = () => {
     setDarkTheme(!darkTheme);
