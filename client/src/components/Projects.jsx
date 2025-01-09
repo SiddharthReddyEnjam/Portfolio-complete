@@ -9,7 +9,7 @@ const Projects = () => {
   const [loading, setLoading] = useState(true);
   const [myprojects, setMyprojects] = useState([]);
   const navigate = useNavigate();
-  const [checkApi, setCheckApi] = useState(false);
+  // const [checkApi, setCheckApi] = useState(false);
 
   // useEffect(() => {
   //   const fetchData = async () => {

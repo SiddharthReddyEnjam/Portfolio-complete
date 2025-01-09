@@ -1,9 +1,7 @@
 import '../styles/footer.css';
 import { AiOutlineCopy, AiFillCopy } from 'react-icons/ai';
 import { useState } from 'react';
-
-const resume_link =
-  'https://drive.google.com/file/d/1Vb2qvBBXPRLI0X4kqZz-Pf06R2qzTEHM/view?usp=sharing';
+import { resume_link } from '../actions/resume_link';
 
 const Footer = () => {
   const [fill, setFill] = useState(false);
@@ -69,7 +67,7 @@ const Footer = () => {
           </div>
         </div>
         <div className='cr'>
-          <p>Copyright © 2024 by Siddharth Reddy Enjam</p>
+          <p>{`Copyright ©${new Date().getFullYear()}  by Siddharth Reddy Enjam`}</p>
         </div>
       </div>
     </div>

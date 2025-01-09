@@ -1,6 +1,6 @@
-const ResumePreview = () => {
-  const pdfUrl = '/data/Siddharth_Resume.pdf';
+import { pdfUrl } from '../actions/resume_link';
 
+const ResumePreview = () => {
   return (
     <div
       style={{ height: '600px', border: '1px solid #ddd', margin: '20px 0' }}

@@ -1,13 +1,13 @@
+import { useOutletContext } from 'react-router-dom';
+import { resume_link } from '../actions/resume_link';
 import '../styles/about.css';
 import ResumePreview from './ResumePreview';
 
-const resume_link =
-  'https://drive.google.com/file/d/1Vb2qvBBXPRLI0X4kqZz-Pf06R2qzTEHM/view?usp=sharing';
-
 function About() {
+  const { darkTheme } = useOutletContext();
   return (
-    <div className='about-main'>
-      <div className='about-component'>
+    <div className={`about-main ${darkTheme && 'about-main-dark'}`}>
+      <div className={`about-component ${darkTheme && 'about-component-dark'}`}>
         <h2>About</h2>
         <div className='about-desc'>
           <p>

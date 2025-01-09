@@ -5,17 +5,49 @@ import ScrollToTop from './components/ScrollToTop';
 
 import './styles/query.css';
 import Chatbot from './components/Chatbot';
+import { useState, useEffect } from 'react';
 
 const App = () => {
+  const systemTheme = useSystemTheme();
+  const [darkTheme, setDarkTheme] = useState(systemTheme);
+
+  const toggleTheme = () => {
+    setDarkTheme(!darkTheme);
+  };
+
   return (
-    <div className='App'>
+    <div className={`App ${darkTheme && 'dark-theme'} `}>
       <ScrollToTop />
-      <Navbar />
-      <Outlet />
-      <Chatbot />
-      <Footer />
+      <Navbar toggleTheme={toggleTheme} darkTheme={darkTheme} />
+      <Outlet context={{ darkTheme }} />
+      <Chatbot darkTheme={darkTheme} />
+      <Footer darkTheme={darkTheme} />
     </div>
   );
+};
+
+const useSystemTheme = () => {
+  const [systemTheme, setSystemTheme] = useState(
+    window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+  );
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+    const handleChange = (e) => {
+      setSystemTheme(e.matches ? 'dark' : 'light');
+    };
+
+    // Add event listener
+    mediaQuery.addEventListener('change', handleChange);
+
+    // Cleanup event listener
+    return () => {
+      mediaQuery.removeEventListener('change', handleChange);
+    };
+  }, []);
+
+  return systemTheme === 'dark' ? true : false;
 };
 
 export default App;

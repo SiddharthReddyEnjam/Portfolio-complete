@@ -1,3 +1,7 @@
+.navbar-main {
+  position: relative;
+}
+
 .navbar {
   width: 100%;
   position: fixed;
@@ -5,17 +9,26 @@
   top: 0;
   bottom: 0;
   height: 5.7rem;
-  /* background-color: #fff; */
   background-color: rgba(255, 255, 255, 0.97);
-  /* box-shadow: 1px 1px 5px #aaa; */
   box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.03);
-  opacity: 0; /* Start with zero opacity to hide it initially */
-  transition: all 0.33s;
+  transition: all 0.33s ease-in-out;
+  opacity: 0;
+  /* transition: transform 0.33s ease-in-out; */
+}
+
+.navbar-dark {
+  background-color: #111111ef;
+  box-shadow: 0 1px 10px rgba(85, 85, 85, 0.565);
 }
 
 .shownav {
   transition: all 0.33s;
   opacity: 1;
+  transform: translateY(0);
+}
+
+.hidenav {
+  /* transform: translateY(-100%); */
 }
 
 .trigger:hover + .navbar,
@@ -50,7 +63,11 @@
   /* padding: 0.5rem 2rem; */
   color: #cf6202;
   cursor: pointer;
-  background-color: #fff;
+}
+
+.navlink-dark {
+  color: #fff;
+  background-color: #111;
 }
 
 /* Mobile Nav */
@@ -109,7 +126,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  transition: all 0.5s ease-in;
+  transition: all 0.2s ease-in;
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
@@ -117,10 +134,20 @@
 }
 
 .open-mnav {
-  opacity: 1;
+  opacity: 98%;
   pointer-events: auto;
   visibility: visible;
   transform: translateX(0);
+}
+
+.m-nav-dark {
+  background-color: #111;
+  color: #fff;
+}
+
+.m-nav-dark .m-navlink {
+  color: #fff;
+  background-color: #111;
 }
 
 .m-nav li a {
@@ -132,8 +159,46 @@
 .m-nav li a:hover {
   color: #cf6202;
 }
+
 .m-nav li a.active {
   color: #cf6202;
   cursor: pointer;
-  background-color: #fff;
+  /* background-color: #fff; */
+}
+
+/* Dark and Light theme */
+
+.light-dark-theme {
+  position: absolute;
+  top: 25%;
+  right: 10%;
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  transition: all 0.01s ease;
+}
+
+.theme-light,
+.theme-dark {
+  font-size: 3rem;
+  /* box-shadow: 0px 3px 10px#cf6202; */
+  background: none;
+  padding: 0;
+}
+
+.theme-light {
+  color: rgb(255, 102, 0);
+}
+
+/* Mobile nav theme */
+.m-light-dark-theme {
+  border: none;
+  cursor: pointer;
+  background-color: inherit;
+  transition: all 0.01s ease;
+}
+
+.m-theme-light,
+.m-theme-dark {
+  font-size: 5rem;
 }

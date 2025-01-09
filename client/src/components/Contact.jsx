@@ -2,6 +2,7 @@ import { useState } from 'react';
 import axios from 'axios';
 
 import '../styles/contact.css';
+import { useOutletContext } from 'react-router-dom';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -11,6 +12,7 @@ const Contact = () => {
   });
   const [share, setShare] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const { darkTheme } = useOutletContext();
 
   const handleChange = (event) => {
     setFormData((prev) => {
@@ -73,7 +75,9 @@ const Contact = () => {
   return (
     <div className='contact-main'>
       <div className='contact'>
-        <div className='contact-section'>
+        <div
+          className={`contact-section ${darkTheme && 'contact-section-dark'}`}
+        >
           <h1>Contact Me</h1>
           {errorMessage && <p className='error-message'>{errorMessage}</p>}
           <form className='contact-form'>

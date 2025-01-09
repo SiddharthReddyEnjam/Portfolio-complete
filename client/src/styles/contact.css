@@ -1,3 +1,7 @@
+.contact-main {
+  margin-top: 6rem;
+}
+
 .contact-section {
   width: 45rem;
   padding: 2rem;
@@ -5,6 +9,10 @@
   box-shadow: 0.1px 0.1px 2px #555;
   border-radius: 5px;
   position: relative;
+}
+
+.contact-section-dark {
+  box-shadow: 0.1px 0.1px 5px #fff;
 }
 
 .contact-section h1 {
@@ -91,6 +99,8 @@
 .ct-gitic {
   opacity: 60%;
   transition: all 0.33s;
+  background-color: inherit;
+  color: inherit;
 }
 
 .ct-mailic:hover,

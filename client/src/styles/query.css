@@ -94,6 +94,9 @@
 
 /* For width of 901 that is 57em = 912px */
 @media (max-width: 57em) {
+  .profile-links {
+  }
+
   .abouthome-main .abouthome-desc p {
     font-size: 1.7rem;
   }
@@ -157,6 +160,10 @@
 
 /* For width of 766 that is 48em = 768px */
 @media (max-width: 48em) {
+  .home-component .home-sub {
+    margin: 0 10rem;
+  }
+
   .skills-main .skills {
     gap: 2rem;
     grid-template-columns: repeat(3, 31.5%);
@@ -165,10 +172,14 @@
 
 /* For width of 715 that is 45em = 720px */
 @media (max-width: 45em) {
+  .App .home-main {
+    margin-top: 5rem;
+  }
   .home-component .home-sub {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    gap: 2rem;
   }
   .home-component .introduction {
     margin-bottom: 0;
@@ -282,6 +293,10 @@
 
 /* For width of 425 that is 27em = 432px */
 @media (max-width: 27em) {
+  .App .home-main {
+    margin-top: 2rem;
+  }
+
   .skills-main .skills {
     gap: 2rem;
     grid-template-columns: repeat(1, 1fr);
@@ -298,6 +313,24 @@
 
   .contact-main .contact-section h1 {
     font-size: 2.5rem;
+  }
+}
+
+/* for width of 400 that is 25em = 400px*/
+@media (max-width: 25em) {
+  .home-component .home-sub {
+    margin: 2rem;
+  }
+  .home-sub .profile-links {
+    flex-basis: auto;
+    flex-flow: row wrap;
+    gap: 1rem;
+  }
+
+  .profile-links > * {
+    flex: 1 1 calc(40% - 1.7rem); /* Ensures 2 items per row, accounting for gap */
+    max-width: calc(40% - 1.7rem);
+    text-align: center; /* Optional: Center-align text in each item */
   }
 }
 

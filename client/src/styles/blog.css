@@ -5,11 +5,15 @@
 }
 
 .blog-maintenance {
-  margin: 2rem;
+  margin: 6rem;
   color: #aaa;
   font-size: 2rem;
   font-family: 'Times New Roman', Times, serif;
   font-style: italic;
+}
+
+.blog-main {
+  margin-top: 6rem;
 }
 
 .blog-main > h1 {

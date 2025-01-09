@@ -1,18 +1,29 @@
 .social-main {
 }
 
-.social-component {
-  margin: 5rem 15rem 0 15rem;
-  display: flex;
+.social-component .badge-base {
+  margin: 5rem 0rem 0 0rem;
+  display: block;
+  width: 34rem;
+  height: 40rem;
   justify-content: center;
-}
-
-.social-component h1 {
-  text-decoration: underline;
-  font-size: 3rem;
-  margin: 2rem 0 1rem 0;
+  overflow: visible;
 }
 
 .linkedin-main {
   margin: auto;
+}
+
+.social-component {
+  width: 100%;
+  width: auto; /* Adjust width as needed */
+  height: auto; /* Let height adjust dynamically */
+  display: block;
+  /* Ensure badge content is not clipped */
+}
+
+.social-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
