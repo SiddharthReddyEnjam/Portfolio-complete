@@ -13,6 +13,7 @@ import PropTypes from 'prop-types'; // Import PropTypes
 const Navbar = ({ darkTheme, toggleTheme }) => {
   const [shownav, setShownav] = useState(true);
   const [navOpen, setNavOpen] = useState(false);
+  const [isRotated, setIsRotated] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -30,6 +31,13 @@ const Navbar = ({ darkTheme, toggleTheme }) => {
 
   const handleMobileNav = () => {
     setNavOpen(!navOpen);
+  };
+
+  const handleThemeToggle = () => {
+    setIsRotated(!isRotated); // Toggle rotation
+    toggleTheme(); // Call the parent theme toggle function
+    const audio = new Audio('/audio/button-click.mp3');
+    audio.play();
   };
 
   return (
@@ -54,11 +62,16 @@ const Navbar = ({ darkTheme, toggleTheme }) => {
             );
           })}
         </ul>
-        <button className='light-dark-theme' onClick={() => toggleTheme()}>
+        <button
+          className={`light-dark-theme ${isRotated ? 'theme-rotate' : ''}`}
+          onClick={() => {
+            handleThemeToggle();
+          }}
+        >
           {darkTheme ? (
-            <MdLightMode className='theme-light' />
-          ) : (
             <MdNightlight className='theme-dark' />
+          ) : (
+            <MdLightMode className='theme-light' />
           )}
         </button>
       </div>
@@ -68,7 +81,10 @@ const Navbar = ({ darkTheme, toggleTheme }) => {
           <div className='nav-moverlay' onClick={handleMobileNav}></div>
         )}
 
-        <button className='nav-open' onClick={handleMobileNav}>
+        <button
+          className={`nav-open ${darkTheme && 'nav-open-dark'}`}
+          onClick={handleMobileNav}
+        >
           {navOpen ? <AiOutlineClose /> : <AiOutlineMenu />}
         </button>
 
@@ -93,13 +109,18 @@ const Navbar = ({ darkTheme, toggleTheme }) => {
             })}
 
             <button
-              className='m-light-dark-theme'
-              onClick={() => toggleTheme()}
+              className={`m-light-dark-theme ${
+                isRotated ? 'theme-rotate' : ''
+              }`}
+              onClick={() => {
+                handleThemeToggle();
+                // setNavOpen(!navOpen);
+              }}
             >
               {darkTheme ? (
-                <MdLightMode className='theme-light m-theme-light' />
-              ) : (
                 <MdNightlight className='theme-dark m-theme-dark' />
+              ) : (
+                <MdLightMode className='theme-light m-theme-light' />
               )}
             </button>
           </ul>
