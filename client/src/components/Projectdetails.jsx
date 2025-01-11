@@ -1,11 +1,14 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import '../styles/projectdetails.css';
+import YouTube from 'react-youtube';
+import ReactPlayer from 'react-player';
 
 const Projectdetails = () => {
   const location = useLocation();
   const project = location.state.project;
   const navigate = useNavigate();
   // const { id } = useParams();
+  const projectvideo = project.video;
 
   const handleBack = () => {
     navigate(-1);
@@ -18,7 +21,14 @@ const Projectdetails = () => {
           <h1>{project.name}</h1>
           <p className='pdesc'>{project.description}</p>
           <p className='pdetail'>{project.details}</p>
+
+          {projectvideo && (
+            <div className='project-video'>
+              <ReactPlayer url={projectvideo} />
+            </div>
+          )}
         </div>
+
         <button className='btn pdtl-btn' onClick={() => handleBack()}>
           {`Go back to project overview <<`}
         </button>

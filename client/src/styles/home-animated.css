@@ -1,12 +1,14 @@
 /* HOME INTRO */
 
 .home-main {
-  margin-top: 8rem;
+  /* padding-top: 8rem; */
+  /* background-color: rgb(226 226 226); */
 }
 
 .home-component {
-  height: 93.5vh;
+  height: 100vh;
   position: relative;
+  /* margin-top: 3rem; */
 }
 
 .home-sub {
@@ -28,7 +30,16 @@
 .introduction h1 {
   font-size: 4rem;
   margin-bottom: 5rem;
+  /* display: inline-block; */
   text-align: center;
+}
+
+.myname {
+  display: inline-block;
+}
+
+.introduction > h1 > p {
+  font-size: 4rem;
 }
 
 .introduction p {
@@ -97,7 +108,7 @@
 .down-icon {
   position: absolute;
   left: 49.3%;
-  bottom: 5%;
+  bottom: 3%;
   z-index: 997;
   -webkit-animation: bounce 3s infinite;
   animation: bounce 3s infinite;

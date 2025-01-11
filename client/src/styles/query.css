@@ -94,9 +94,6 @@
 
 /* For width of 901 that is 57em = 912px */
 @media (max-width: 57em) {
-  .profile-links {
-  }
-
   .abouthome-main .abouthome-desc p {
     font-size: 1.7rem;
   }
@@ -134,6 +131,9 @@
 
 /* For width of 850 that is 54em = 864px */
 @media (max-width: 54em) {
+  .home-component .home-sub {
+    margin: 0 5rem;
+  }
   .home-sub .introduction h1 {
     font-size: 3.5rem;
   }
@@ -161,7 +161,7 @@
 /* For width of 766 that is 48em = 768px */
 @media (max-width: 48em) {
   .home-component .home-sub {
-    margin: 0 10rem;
+    margin: 0 2rem;
   }
 
   .skills-main .skills {
@@ -172,9 +172,9 @@
 
 /* For width of 715 that is 45em = 720px */
 @media (max-width: 45em) {
-  .App .home-main {
+  /* .App .home-main {
     margin-top: 5rem;
-  }
+  } */
   .home-component .home-sub {
     flex-direction: column;
     justify-content: flex-start;
@@ -199,7 +199,7 @@
 
 /* For width of 685 that is 43em = 688px */
 @media (max-width: 43em) {
-  .projecthome-component .projecthome {
+  .projecthome-component .projecthome-elements {
     height: 30rem;
   }
 
@@ -225,6 +225,9 @@
 
 /* For width of 635 that is 40em = 640px */
 @media (max-width: 40em) {
+  .home-component .home-sub {
+    margin: 0 0rem;
+  }
   .navbar-main .navbar {
     display: none;
   }
@@ -233,7 +236,12 @@
     display: block;
   }
 
-  .projecthome-component .projecthome {
+  .projecthome-component .projecthome-elements {
+    height: 68rem;
+    width: 35rem;
+  }
+
+  .projecthome-component .projecthome-elements .projecthome {
     flex-direction: column;
     height: 68rem;
     width: 35rem;
@@ -285,6 +293,21 @@
 
 /* For width of 592 that is 37em = 592px */
 @media (max-width: 37em) {
+  .home-component .home-sub {
+    margin: 0 0rem;
+  }
+
+  .home-component .intro-img {
+    margin: 0;
+    height: 40%;
+    width: 70%;
+    margin-bottom: 8rem;
+  }
+
+  .home-component .down-icon {
+    bottom: 7%;
+  }
+
   .skills-main .skills {
     gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
@@ -293,9 +316,9 @@
 
 /* For width of 425 that is 27em = 432px */
 @media (max-width: 27em) {
-  .App .home-main {
+  /* .App .home-main {
     margin-top: 2rem;
-  }
+  } */
 
   .skills-main .skills {
     gap: 2rem;

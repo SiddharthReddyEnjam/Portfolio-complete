@@ -21,6 +21,8 @@ const projects = [
     tools: [{ tool: 'ReactJs', color: 'indigo' }],
     details: 'Based on taxi booking and management.',
     site: 'https://rideeasy.netlify.app/',
+    video: 'https://youtu.be/58NdRPFSPJc?si=UywMmwNjQ2yURDNH',
+    videoId: '58NdRPFSPJc',
   },
   {
     id: 2,

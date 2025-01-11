@@ -12,18 +12,33 @@
   margin-bottom: 1.5rem;
 }
 
+.projecthome-elements {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  box-shadow: 0.5px 0.5px 5px #aaa;
+  border-radius: 10px;
+  width: 100%;
+  margin: 0 auto;
+  scroll-behavior: smooth;
+}
+
+.projecthome-elements::-webkit-scrollbar {
+  display: none;
+}
+
 .projecthome {
-  margin: auto;
+  flex: 0 0 auto;
   display: flex;
   height: 25rem;
   width: 100%;
   justify-content: space-between;
   gap: 1rem;
-  box-shadow: 0.5px 0.5px 5px #aaa;
-  border-radius: 10px;
   transition: all 1s;
   overflow: hidden;
-  margin-bottom: 2.5rem;
+  scroll-snap-align: start;
 }
 
 .projecthome-splitbtn {
@@ -35,6 +50,9 @@
   width: 25rem;
   object-fit: cover;
   border-radius: 10px;
+}
+
+.projecthome-img img:hover {
 }
 
 .projecthome-overview {
@@ -109,6 +127,12 @@
   justify-content: center;
   gap: 5rem;
   transition: all 0.5s;
+}
+
+.no-btn:hover {
+  transform: scale(1.2);
+  color: #0091ff;
+  transition: transform 0.2s, color 0.2s;
 }
 
 .pn-btn,
