@@ -19,13 +19,13 @@ const Projectdetails = () => {
         <div className='pdtl'>
           <h1>{project.name}</h1>
           <p className='pdesc'>{project.description}</p>
-          <p className='pdetail'>{project.details}</p>
 
           {projectvideo && (
             <div className='project-video'>
-              <ReactPlayer url={projectvideo} />
+              <ReactPlayer url={projectvideo} className='video-main' />
             </div>
           )}
+          <p className='pdetail'>{project.details}</p>
         </div>
 
         <button className='btn pdtl-btn' onClick={() => handleBack()}>

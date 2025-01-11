@@ -26,7 +26,7 @@ const HomeIntro = () => {
       .fromTo(
         introText,
         { x: '-100%', opacity: 0 }, // Start from off-screen left
-        { x: '0%', opacity: 1, duration: 1, ease: 'power3.out' } // Slide into place
+        { x: '0%', opacity: 1, duration: 0.5, ease: 'power3.out' } // Slide into place
       )
       .fromTo(
         nameSpans,

@@ -312,6 +312,11 @@
     gap: 2rem;
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .pdtl .project-video {
+    height: 240px !important;
+    width: 400px !important;
+  }
 }
 
 /* For width of 425 that is 27em = 432px */
@@ -336,6 +341,11 @@
 
   .contact-main .contact-section h1 {
     font-size: 2.5rem;
+  }
+
+  .pdtl .project-video {
+    height: 180px !important;
+    width: 300px !important;
   }
 }
 
