@@ -71,24 +71,6 @@ const Projects = () => {
     navigate(`projectdetails/` + project.id, { state: { project } });
   };
 
-  // const handleProjectP = () => {
-  //   // Go to the previous project
-  //   setCurrentProjectIndex((prevIndex) =>
-  //     prevIndex > 0 ? prevIndex - 1 : prevIndex
-  //   );
-  // };
-
-  // const handleProjectN = () => {
-  //   // Go to the next project
-  //   setCurrentProjectIndex((prevIndex) =>
-  //     prevIndex < myprojects.length - 1 ? prevIndex + 1 : prevIndex
-  //   );
-  // };
-
-  // const currentProject = myprojects[currentProjectIndex];
-  // const stool = currentProject.tools.split(',').map((item) => item.trim());
-  // const slang = currentProject.lang.split(',').map((item) => item.trim());
-
   const projectElements = myprojects.map((project) => {
     return (
       <div className='project' key={project.id}>
