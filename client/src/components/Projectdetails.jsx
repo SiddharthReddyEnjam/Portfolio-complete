@@ -1,6 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom';
 import '../styles/projectdetails.css';
-import YouTube from 'react-youtube';
 import ReactPlayer from 'react-player';
 
 const Projectdetails = () => {
