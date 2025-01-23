@@ -16,6 +16,9 @@ import Contact from './components/Contact';
 import Projectdetails from './components/Projectdetails';
 import HomeIntro from './components/HomeIntro';
 
+import process from 'process';
+window.process = process;
+
 const router = createBrowserRouter([
   {
     path: '/',

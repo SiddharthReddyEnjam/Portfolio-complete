@@ -13,6 +13,7 @@ const Contact = () => {
   const [share, setShare] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
   const { darkTheme } = useOutletContext();
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
   const handleChange = (event) => {
     setFormData((prev) => {
@@ -54,7 +55,7 @@ const Contact = () => {
 
     try {
       // Send the form data to the backend using Axios
-      await axios.post('http://localhost:5002/contact', formData);
+      await axios.post(`${API_BASE_URL}/contact`, formData);
       // Handle success, e.g., show a success message or redirect the user
       // console.log('Form data sent:', response.data);
       setFormData({

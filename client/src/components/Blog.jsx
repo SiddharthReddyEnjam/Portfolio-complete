@@ -10,11 +10,12 @@ const Blog = () => {
   const [loading, setLoading] = useState(true);
   const [posts, setPosts] = useState([]);
   const [maintenance, setMaintenance] = useState(false);
+  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
   useEffect(() => {
     const fetchAllPosts = async () => {
       try {
-        const res = await axios.get('http://localhost:5002/blog');
+        const res = await axios.get(`${API_BASE_URL}/blog`);
         setLoading(false);
         setMaintenance(false);
         setPosts(res.data);

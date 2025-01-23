@@ -4,6 +4,8 @@ const cors = require('cors');
 const app = express();
 const path = require('path');
 
+require('dotenv').config();
+
 // Connect Database
 connectDB();
 
@@ -19,13 +21,11 @@ app.use(express.json({ extended: false }));
 
 app.use(cors());
 
-// app.use(cors());
-
 app.get('/', (req, res) => res.send('Hii I am Server'));
 app.use('/blog', require('./routes/blog'));
 app.use('/contact', require('./routes/contact'));
 
-const PORT = process.env.PORT || 5002;
+const PORT = process.env.PORT;
 
 app.listen(PORT, () => {
   console.log(`Server listening on port ${PORT}`);
