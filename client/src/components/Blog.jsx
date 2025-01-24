@@ -10,7 +10,8 @@ const Blog = () => {
   const [loading, setLoading] = useState(true);
   const [posts, setPosts] = useState([]);
   const [maintenance, setMaintenance] = useState(false);
-  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+  const API_BASE_URL =
+    import.meta.env.VITE_API_BASE_URL || 'http://localhost:5002';
 
   useEffect(() => {
     const fetchAllPosts = async () => {
@@ -25,7 +26,7 @@ const Blog = () => {
       }
     };
     fetchAllPosts();
-  }, []);
+  }, [API_BASE_URL]);
 
   if (maintenance) {
     return (

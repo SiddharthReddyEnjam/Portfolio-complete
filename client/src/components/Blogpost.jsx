@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { AiOutlineLike, AiFillLike } from 'react-icons/ai';
+import PropTypes from 'prop-types';
 
 const Blogpost = ({ post }) => {
   const [like, setLike] = useState(false);
@@ -7,7 +8,7 @@ const Blogpost = ({ post }) => {
     setLike(!like);
   };
 
-  const [originalDateString, setOriginalDateString] = useState(post.date);
+  const originalDateString = post.date;
   const [formattedDate, setFormattedDate] = useState('');
 
   useEffect(() => {
@@ -68,6 +69,14 @@ const Blogpost = ({ post }) => {
       </div>
     </div>
   );
+};
+
+Blogpost.propTypes = {
+  post: PropTypes.shape({
+    title: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+  }).isRequired,
 };
 
 export default Blogpost;
