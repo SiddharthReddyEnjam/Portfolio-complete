@@ -13,7 +13,8 @@ const Contact = () => {
   const [share, setShare] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
   const { darkTheme } = useOutletContext();
-  const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
+  const API_BASE_URL =
+    import.meta.env.VITE_API_BASE_URL || 'http://localhost:5002';
 
   const handleChange = (event) => {
     setFormData((prev) => {
