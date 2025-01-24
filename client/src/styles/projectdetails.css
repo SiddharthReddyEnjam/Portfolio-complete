@@ -1,5 +1,5 @@
 .project-dtl-main {
-  min-height: 75vh;
+  min-height: 80vh;
   position: relative;
   padding-top: 8rem;
 }
@@ -19,20 +19,23 @@
 }
 
 .pdtl .pdesc {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
 .pdtl .pdetail {
-  font-size: 1.5rem;
+  font-size: 2rem;
 }
 
 .project-video {
   display: flex;
   align-self: center;
   justify-self: center;
-  margin: 10rem 0;
-  box-shadow: 0.1px 0.1px 3px #555;
+  margin: 10rem 5rem;
+  box-shadow: 0.1px 0.1px 1px #555;
+  height: 340px !important;
+  width: 560px !important;
+  overflow: hidden;
 }
 
 .pdtl-btn {
