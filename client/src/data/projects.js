@@ -1,3 +1,4 @@
+import baseballLogo from '../images/projects/Baseball/baseballjunkies.jpeg';
 import rideEasyLogo from '../images/projects/RideEasy/RideEasy.jpeg';
 import handImage from '../images/projects/MoCap/hand.png';
 import countriesLogo from '../images/projects/COUNTRIESOW/countries_main.png';
@@ -9,6 +10,34 @@ import carLogo from '../images/projects/RideEasy/Car.png';
 const projects = [
   {
     id: 1,
+    imgs: baseballLogo,
+    name: 'Baseball Junkies',
+    description:
+      'Baseball Junkies is a dynamic web platform that enables seamless registration for baseball tournaments and events. It delivers a smooth and engaging user experience with real-time data, interactive content, and an efficient registration system that automatically assigns participants to teams.',
+    langs: [
+      { lang: 'TypeScript', color: 'Purple' },
+      { lang: 'HTML', color: '#777' },
+      { lang: 'Tailwind CSS', color: '#38B2AC' },
+      // { lang: 'CSS', color: '#555' },
+      { lang: 'Java', color: '#b07219' },
+
+      // { lang: 'AWS Elastic Beanstalk', color: '#FF9900' },
+      { lang: 'REST API', color: '#E535AB' },
+    ],
+
+    tools: [
+      { tool: 'NextJS', color: 'indigo' },
+      { tool: 'Spring Boot', color: '#6DB33F' },
+      { tool: 'PostgreSQL', color: '#336791' },
+      { tool: 'AWS', color: '#FF9900' },
+    ],
+    details: 'Based on tournament registration and game logs',
+    detailsdesc:
+      'Baseball Junkies is a full-stack web application built with Next.js and Spring Boot, designed for baseball enthusiasts to explore detailed team and player statistics, stay updated on game insights, and register for tournaments and events. The platform offers a smooth user experience with dynamic content, real-time data, and a streamlined registration system that automatically assigns participants to teams, making it ideal for players looking to engage more deeply with the sport.',
+    site: 'https://baseballjunkies.vercel.app/',
+  },
+  {
+    id: 2,
     imgs: rideEasyLogo,
     name: 'RideEasyy (Taxi Management System)',
     description:
@@ -25,7 +54,7 @@ const projects = [
     videoId: '58NdRPFSPJc',
   },
   {
-    id: 2,
+    id: 3,
     imgs: handImage,
     name: 'Motion Capture Hand Postures',
     description:
@@ -44,7 +73,7 @@ const projects = [
     details: 'From MCHP',
   },
   {
-    id: 3,
+    id: 4,
     imgs: countriesLogo,
     name: 'Countries of the World',
     description:
@@ -58,7 +87,7 @@ const projects = [
     details: 'From MCHP',
   },
   {
-    id: 4,
+    id: 5,
     imgs: homsLogo,
     name: 'Hostel Outing Management System',
     description:
@@ -75,7 +104,7 @@ const projects = [
     details: 'From HOMS',
   },
   {
-    id: 5,
+    id: 6,
     imgs: bloodGram,
     name: 'BloodGram',
     description:
@@ -89,7 +118,7 @@ const projects = [
     details: 'Based on Blood Donation',
   },
   {
-    id: 6,
+    id: 7,
     imgs: omniLogo,
     name: 'Omnifood',
     description:
@@ -104,7 +133,7 @@ const projects = [
       'Based on food ordering. To get a healthy meal delivered to the door, every single day',
   },
   {
-    id: 7,
+    id: 8,
     imgs: carLogo,
     name: 'Cars(in progress)',
     description: 'will be added',

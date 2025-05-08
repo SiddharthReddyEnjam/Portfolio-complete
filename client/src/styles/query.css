@@ -109,7 +109,7 @@
   }
 
   .projecthome .projecthome-desc {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 
   .projecthome-details .detailshome-btn {
@@ -120,7 +120,7 @@
     font-size: 2rem;
   }
   .project .project-desc {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
   }
 
   .project-details .details-btn {
@@ -424,3 +424,12 @@
     margin: 0 3rem;
   }
 }
+
+/* For width of 300 that is 20em = 320px @media (max-width: 20em) {
+  .projecthome-component,
+  .projecthome-elements .projecthome {
+    flex-direction: column;
+    height: 68rem;
+    width: 30rem;
+  }
+} */

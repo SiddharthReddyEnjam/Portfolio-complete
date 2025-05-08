@@ -49,13 +49,17 @@
 .tooltip-container {
   position: relative;
   display: inline-block;
-  height: 24px; /* Fixed height for the container to reserve space for the tooltip */
+  height: 30px; /* Fixed height for the container to reserve space for the tooltip */
   display: flex;
   align-items: center;
 }
 
 .tooltip-container.hovered .tooltip-text {
   display: block;
+}
+
+.tooltip-container .copy-link {
+  color: inherit;
 }
 
 .tooltip-text {
